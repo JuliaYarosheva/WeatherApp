@@ -16,6 +16,7 @@ export interface Day {
     condition: {
       icon: string;
       text: string;
+      code: number;
     };
     maxtemp_c: number;
     mintemp_c: number;
