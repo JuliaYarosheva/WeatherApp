@@ -1,0 +1,8 @@
+.currentForecastContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 400px;
+  border-radius: 15px;
+  margin: 15px;
+}

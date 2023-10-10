@@ -1,0 +1,8 @@
+.forecastCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  border-radius: 15px;
+  padding: 10px;
+}
