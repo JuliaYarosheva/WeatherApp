@@ -17,11 +17,11 @@ const useGetLocation = () => {
         },
       })
       .then((res) => {
-        setLocation(console.log(res.data));
+        setLocation(res.data);
         //setLoading(false);
       })
       .catch((err) => {
-        setLocationError(console.log(err.message));
+        setLocationError(err.message);
         //setLoading(false);
       });
   }, []);

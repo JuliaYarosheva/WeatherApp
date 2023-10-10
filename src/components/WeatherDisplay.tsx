@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { WeatherContext } from "../providers/WeatherProvider";
 import { Day } from "../types/types";
-import { List, ListItem, Typography } from "@mui/material";
+import { List, ListItem } from "@mui/material";
 import ForecastCard from "./ForecastCard";
 import CurrentForecast from "./CurrentForecast";
 
