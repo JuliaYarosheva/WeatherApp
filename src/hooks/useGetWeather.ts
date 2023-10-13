@@ -17,12 +17,13 @@ const useWeather = () => {
         {
           params: {
             q: city,
-            days: 5,
+            days: 3,
             aqi: "no",
           },
         }
       )
       .then((res) => {
+        setError("");
         setData(res.data);
         setLoading(false);
       })

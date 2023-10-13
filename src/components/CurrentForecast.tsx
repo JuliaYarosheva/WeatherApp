@@ -4,7 +4,7 @@ import { CurrentDay } from "../types/types";
 import styles from "./CurrentForecast.module.css";
 import { useContext } from "react";
 import { WeatherContext } from "../providers/WeatherProvider";
-import { Stack, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 
 interface CurrentForecastProps {
   data: CurrentDay;

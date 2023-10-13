@@ -4,13 +4,14 @@ import { theme } from "../App";
 const Header = () => {
   return (
     <Typography
-      variant="h4"
+      variant="h1"
       sx={{
+        fontSize: "46px",
         color: theme.palette.primary.main,
         marginBottom: 5,
       }}
     >
-      Type your city to know the weather...
+      Weather App
     </Typography>
   );
 };
