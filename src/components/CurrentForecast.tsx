@@ -20,9 +20,9 @@ const CurrentForecast = ({ data }: CurrentForecastProps) => {
     >
       <div>
         <img
-          src={`../public/images/weather-icons/${dayTime[data.is_day]}/${
-            weatherIcons[data.condition.code]
-          }`}
+          src={`${import.meta.env.BASE_URL}images/weather-icons/${
+            dayTime[data.is_day]
+          }/${weatherIcons[data.condition.code]}`}
           alt={data.condition.text}
           style={{ width: "100px" }}
         />

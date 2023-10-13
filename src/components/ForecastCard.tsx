@@ -16,7 +16,7 @@ const ForecastCard = ({ data }: ForecastProps) => {
     >
       <p>{data.day.condition.text}</p>
       <img
-        src={`../public/images/weather-icons/day/${
+        src={`${import.meta.env.BASE_URL}images/weather-icons/day/${
           weatherIcons[data.day.condition.code]
         }`}
         alt={data.day.condition.text}
