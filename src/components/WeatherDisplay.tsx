@@ -24,7 +24,7 @@ const CurrentWeather = () => {
         >
           <Stack spacing={2} direction="row" width={"100%"}>
             {data?.forecast?.forecastday.map((day: Day, i: number) => (
-              <ListItem key={i} sx={{ padding: 0 }}>
+              <ListItem key={i} sx={{ padding: "0px" }}>
                 <ForecastCard data={day} />
               </ListItem>
             ))}
