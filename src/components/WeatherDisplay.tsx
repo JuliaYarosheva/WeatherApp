@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { WeatherContext } from "../providers/WeatherProvider";
 import { Day } from "../types/types";
-import { List, ListItem } from "@mui/material";
+import { List, ListItem, Stack } from "@mui/material";
 import ForecastCard from "./ForecastCard";
 import CurrentForecast from "./CurrentForecast";
 
@@ -19,13 +19,16 @@ const CurrentWeather = () => {
         <List
           sx={{
             display: "flex",
+            justifyContent: "space-between",
           }}
         >
-          {data?.forecast?.forecastday.map((day: Day, i: number) => (
-            <ListItem key={i}>
-              <ForecastCard data={day} />
-            </ListItem>
-          ))}
+          <Stack spacing={2} direction="row" width={"100%"}>
+            {data?.forecast?.forecastday.map((day: Day, i: number) => (
+              <ListItem key={i} sx={{ padding: 0 }}>
+                <ForecastCard data={day} />
+              </ListItem>
+            ))}
+          </Stack>
         </List>
       </>
     );

@@ -35,11 +35,13 @@ function App() {
   return (
     <WeatherProvider>
       <ThemeProvider theme={theme}>
-        <Stack justifyContent="center" alignItems="center">
-          <Header />
-          <Search />
+        <Stack direction="column" sx={{ margin: "15px auto" }}>
+          <Stack justifyContent="center" alignItems="center">
+            <Header />
+            <Search />
+          </Stack>
+          <WeatherDisplay />
         </Stack>
-        <WeatherDisplay />
       </ThemeProvider>
     </WeatherProvider>
   );

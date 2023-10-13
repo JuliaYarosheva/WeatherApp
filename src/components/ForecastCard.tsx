@@ -1,4 +1,4 @@
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { Day } from "../types/types";
 import styles from "./ForecastCard.module.css";
 import { theme } from "../App";
@@ -14,7 +14,9 @@ const ForecastCard = ({ data }: ForecastProps) => {
       className={styles.forecastCardContainer}
       style={{ border: "2px solid " + theme.palette.primary.main }}
     >
-      <p>{data.day.condition.text}</p>
+      <Typography variant="h6" textAlign="center" mb={2}>
+        {data.day.condition.text}
+      </Typography>
       <img
         src={`${import.meta.env.BASE_URL}images/weather-icons/day/${
           weatherIcons[data.day.condition.code]
