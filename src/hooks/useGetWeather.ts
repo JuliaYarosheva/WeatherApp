@@ -13,7 +13,7 @@ const useWeather = () => {
     setLoading(true);
     axios
       .get<Data>(
-        "http://api.weatherapi.com/v1/forecast.json?key=155a4f358e464633946203943232408",
+        "http://api.weatherapi.com/v1/forecast.json?key=172d18d3a76542c7b9d100101231310",
         {
           params: {
             q: city,
