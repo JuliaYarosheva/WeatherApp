@@ -4,7 +4,7 @@ import { CurrentDay } from "../types/types";
 import styles from "./CurrentForecast.module.css";
 import { useContext } from "react";
 import { WeatherContext } from "../providers/WeatherProvider";
-import { Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 
 interface CurrentForecastProps {
   data: CurrentDay;
@@ -30,7 +30,7 @@ const CurrentForecast = ({ data }: CurrentForecastProps) => {
       <div>
         <p>Now</p>
         <Typography variant="h5">{city.toUpperCase()}</Typography>
-        <p>Temperature: {data.temp_c}°C</p>
+        <p>{data.temp_c}°C</p>
         <p>{data.condition.text}</p>
       </div>
     </div>

@@ -22,7 +22,11 @@ const CurrentWeather = () => {
             justifyContent: "space-between",
           }}
         >
-          <Stack spacing={2} direction="row" width={"100%"}>
+          <Stack
+            spacing={2}
+            direction={{ xs: "column", sm: "row" }}
+            width={"100%"}
+          >
             {data?.forecast?.forecastday.map((day: Day, i: number) => (
               <ListItem key={i} sx={{ padding: "0px" }}>
                 <ForecastCard data={day} />
